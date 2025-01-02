@@ -124,7 +124,7 @@ db.people.createIndex( { user_id: 1, age: -1 } )
 ```sql
 DROP TABLE people
 ```
-```javscript
+```javascript
 db.people.drop()
 ```
 
@@ -477,7 +477,7 @@ JOIN часто використовується для нормалізації
 **Lookup у MongoDB**
 У MongoDB lookup використовується в агрегуванні для об'єднання документів з різних колекцій, подібно до JOIN у SQL. MongoDB є NoSQL-базою, тому її архітектура не передбачає природних зв'язків між колекціями, але функція $lookup дозволяє створювати зв'язки між документами.
 Синтаксис $lookup:
-```json
+```
 {
   $lookup: {
     from: "target_collection",        // Назва колекції, з якою здійснюється об'єднання
